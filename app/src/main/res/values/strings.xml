@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MapPolygon</string>
+    <string name="title_activity_maps">Map Current Location</string>
+    <string name="string_map">Whole Map</string>
+    <string name="string_location">Current Location</string>
+    <string name="search_hint">Input text for searching (filter by in three pos.) </string>
+
+
+    <string name="deviceId">383722E7-F691-44FA-856B-6118B34CF4AB</string>
+    <string name="splash_name">KERNEL</string>
+</resources>

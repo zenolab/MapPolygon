@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ui.SplashActivity">
+
+    <TextView
+        android:id="@+id/textTitleOfSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:shadowColor="#7c7b7b"
+        android:shadowDx="2"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="@string/splash_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="#565e63"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:text="Splash Name" />
+
+</RelativeLayout>
