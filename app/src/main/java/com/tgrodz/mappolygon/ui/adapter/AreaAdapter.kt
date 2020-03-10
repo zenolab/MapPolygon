@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tgrodz.mappolygon.R
 import kotlinx.android.synthetic.main.row_layout.view.*
 
-
 class AreaAdapter (private var areas : ArrayList<Area>, private val listener : ItemListener )
     : RecyclerView.Adapter<AreaAdapter.ViewHolder>()   {
 

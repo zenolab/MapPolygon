@@ -69,16 +69,21 @@ class MainActivity : AppCompatActivity(), ItemListener {
 
     override fun onItemClick(item: Area) {
         Toast.makeText(this, "You clicked: ${item.area}", Toast.LENGTH_SHORT).show()
+
+        Log.d(TAG, " max_Y ${item.min_X}")
+        Log.d(TAG, " min_Y ${item.max_X}")
+        Log.d(TAG, " max_X ${item.min_Y}")
+        Log.d(TAG, " min_X ${item.max_Y}")
+
         val intent = Intent(this, MapsActivity::class.java)
         intent.putExtra("FieldNoDescr", item.fieldNoDescr)
         intent.putExtra("Area", item.area)
-        intent.putExtra("min_X", item.min_X)
-        intent.putExtra("max_X", item.max_X)
-        intent.putExtra("min_Y", item.min_Y)
-        intent.putExtra("max_Y", item.max_Y)
+        intent.putExtra(ANGLE1, item.min_X)
+        intent.putExtra(ANGLE2, item.max_X)
+        intent.putExtra(ANGLE3, item.min_Y)
+        intent.putExtra(ANGLE4, item.max_Y)
         startActivity(intent)
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.action_menu, menu)
