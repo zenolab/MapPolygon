@@ -13,9 +13,6 @@ class AreaViewModel (private val deviceId: String) : ViewModel()   {
 
     companion object { @JvmField val TAG: String = MainActivity::class.java.simpleName }
 
-    @Inject
-    lateinit var areaApi: AreaApi
-
     private val cryptoRepository = AreaRepository()
     private val areasData : MutableLiveData<List<Area>> by lazy {
         MutableLiveData<List<Area>>()
