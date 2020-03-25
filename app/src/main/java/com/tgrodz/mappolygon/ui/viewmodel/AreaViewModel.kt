@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 class AreaViewModel (private val deviceId: String) : ViewModel()   {
 
-    companion object { @JvmField val TAG: String = MainActivity::class.java.simpleName }
+    companion object { @JvmField val TAG: String = AreaViewModel::class.java.simpleName }
 
     private val cryptoRepository = AreaRepository()
     private val areasData : MutableLiveData<List<Area>> by lazy {
